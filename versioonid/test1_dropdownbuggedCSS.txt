@@ -1,0 +1,26 @@
+/*Navbar seaded*/
+.navbar-brand>img {
+	height: 100px;
+	width: 100px;
+}
+
+div.navbar {
+	height: 100px;
+	border:none;
+	background-color: #005595;
+}
+div#navbarcontainer {
+	height: 100px;
+}
+.navbar-brand {
+	height: 100px;
+	padding-top:0px;
+}
+
+/*dropdown*/
+.dropdown {
+	height: 100px;
+}
+button.btn.btn-primary.dropdown-toggle {
+	margin-top:65px;
+}

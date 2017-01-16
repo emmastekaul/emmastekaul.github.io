@@ -1,0 +1,205 @@
+/*terve lehe background color*/
+html body {
+   background-image: url("taust4.png");
+}
+/*Konteinerite paddingu algsätete nullimine*/
+.container {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+/*NAVBAR SEADED!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/*navbar logo suurus*/
+.navbar-brand>img {
+	height: 100px;
+	width: 100px;
+}
+/*navigatsiooni headeri margin*/
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+	margin-left:0px;
+}
+.container>.navbar-header {
+	margin-left:0px;
+}
+/*navigatsioonibar-i seaded*/
+nav.navbar.navbar-default {
+	background-color:#005595;
+	max-height: 102px;
+	margin-bottom: 0px;
+	border-color: #005595;
+	border-radius: 10px 10px 0px 0px;
+}
+/*navbar >list>a font värv*/
+.navbar-default .navbar-nav>li>a {
+	color: #fff;
+}
+/*Koolimenüü line height, värvus*/
+.navbar-default .navbar-nav>a {
+	color:#fff;
+	line-height: 3.6;
+	margin-left:15px;
+}
+/*navbar brand seaded*/
+.navbar-brand {
+	height: 100px;
+	padding-top:0px;
+}
+/*navbar unordered listi padding*/
+ul.nav.navbar-nav {
+	padding-top:25px;
+}
+/*Kokkusurutud navigatsioonimenüü buttoni margin ülevalt ja paremalt*/
+.navbar-toggle {
+	margin-top:33px;
+	margin-right: 40px;
+}
+/*collapsed/collapsing navbarilt paddingu kustutus ja margini lisamine.
+positsiooni andmine, et saaks lisada z-indexi, et menüü oleks nähtav
+kõrgeima prioriteediga.*/
+div#navbar-collapse-1.navbar-collapse.collapse.in ul,
+div#navbar-collapse-1.navbar-collapse.collapsing ul {
+	margin-top:-10px;
+	padding-top: 0px;
+	z-index: 17;
+	position: relative;
+	background-color:#005595;
+}
+/*Collapsed navbar-i menüü ääre taustvärvi muutus*/
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+	border-color: #005595;
+}
+
+/*CAROUSEL SEADED!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+/*Piltide carouseli maksimum kõrgus*/
+.carousel-inner,
+div.item.active {
+	max-height: 302px;
+}
+
+/*carousel paragrahvi teksti kirjasuurus*/
+div.carousel-caption>p {
+	font-size:16px;
+
+}
+/*carousel pealkirja kirjasuurus*/
+div.carousel-caption>h4 {
+	font-size: 18px;
+}
+
+/*carousel tekstile raam taustvärviga, et oleks nähtav*/
+.carousel-caption{
+    background: rgba(0,0,0,0.5);
+    border-radius:50px;
+}
+/*Karusselli tekstid keskele joondatud*/
+div#myCarousel.carousel {
+	text-align: center;
+}
+/*FONT SUURUSE MUUTMINE 589PX ja sellest väiksem, 
+et tekst mahuks carousel piltidele*/
+@media (max-width: 589px) {
+   div.carousel-caption>p {
+	font-size:10px;
+}
+div.carousel-caption>h4 {
+	font-size:12px;
+}
+}
+
+
+
+/*TEATED JA LOGOD!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+/*Vahejoone seaded*/
+.vahejoon  {
+    background: url("http://bootdey.com/img/Content/border-top-dotted.gif") repeat-x scroll left top rgba(0, 0, 0, 0);
+    margin: 0 0 0 30px;
+    padding: 25px 0 15px;
+}
+/*Artikli postituse pealkirja seaded*/
+.postituse-pealkiri {
+    margin-bottom: 7px;
+    margin-top: 3px;
+    font-size: 16px;
+    line-height: 20px;
+    color:#005595;
+}
+/*Artikli sisu seaded*/
+.artiklisisu {
+    color: black;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 8px;
+}
+/*Logode seaded*/
+.logod {
+    margin-bottom: 32px;
+    text-align: center;
+}           
+/*img-thumbnail classi logode seaded*/
+.img-thumbnail {
+	max-height: 120px;
+	max-width: 120px;
+	background-color:#fff;
+	border:none;
+}
+/*Hea kooli rajaleidja logo seaded*/
+#heakool {
+	padding-top: 15px;
+	max-height: 250px;
+	max-width: 250px;
+	margin-bottom: -25px;
+}
+/*Esimese artikli tausta (vahejoone) kustutus*/
+#esimeneartikkel {
+	background:none;
+}
+/*ekooli logo all margin-bottom 0, et ühel real ei jääks vahet teise columniga*/
+#eenet {
+	margin-bottom: 0px;
+	max-height: 200px;
+	max-width: 200px;
+	margin-top: -20px;
+}
+/*Sisu konteineri taust valge*/ 
+div.container.sisu {
+	background: #fff;
+}
+/*Teadete lehekülgede vahetamise funktsioon (pagination)*/
+.pagination>li>a, 
+.pagination>li>span { 
+	border-radius: 50% !important;
+	margin: 0 5px;
+}
+div#lehtede-vahetus.container {
+	padding-left:25px;
+}
+
+/*JALUS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+footer { 
+	background-color:#005595; 
+	min-height:200px;
+	color:#fff;
+}
+/*Jaluse veergude ühised seaded*/
+.jaluse-veerg {
+ 	margin-top:50px; 
+ 	padding:0 100px; 
+}
+/*Meili ja asukoha logo/fonti suurus, värvus*/
+i.fa.fa-map-pin,
+i.fa.fa-envelope {
+	font-size:30px;
+	color:black;
+}
+/*Telefoni logo/fonti suurus, värvus, padding*/
+i.fa.fa-phone {
+	font-size:25px;
+	color:black;
+	padding-right:10px;
+}
+/*Copyright seaded*/
+p#oigused {
+	padding-top: 25px;
+}
